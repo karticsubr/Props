@@ -1,5 +1,6 @@
 \documentclass[a4paper,10pt,twocolumn]{article}
-\usepackage{hyperref}
+
+% \usepackage{hyperref}
 
 \usepackage{wrapfig}
 
@@ -40,10 +41,10 @@
 \setlength\hoffset{-.1 in}
 \setlength\topmargin{-.1 in}
 \setlength\headheight{.1in}
-\setlength\headsep{.1in}
-\setlength\textheight{10.6in}
-\setlength\textwidth{6.9in}
-\setlength\oddsidemargin{-.2in}
+\setlength\headsep{.5in}
+\setlength\textheight{10in}
+\setlength\textwidth{6.3in}
+\setlength\oddsidemargin{.1in}
 \setlength\evensidemargin{.2in}
 \setlength\parindent{0.25in}
 % \footskip -.05in
@@ -92,16 +93,20 @@ of Spatio-temporal Statistics of Targeted Species}
 %  \vspace{-1.5em}
 % \end{figure*}
 
-\hdg{Natural habitats and urbanisation}
+\hdg{Human-wildlife conflict in India} India's burgeoning human population has led to unprecedented rates of urbanisation, leaving a mere 5\% of the land area to be earmarked for conservation~\cite{indiacons}. These protected reserves are the last resort for thriving populations of large and threatened mammals. Unfortunately, these fragmented areas are surrounded by human settlements. Each year, thousands of people and hundreds of wild animals lose their lives due to human-wildlife conflict in India. Hundreds of farmers, each year, suffer devastating loss to their property and crops. Conflicts between humans and wild elephants result in about 400 human fatalaities and the deaths of about 50 wild elephants annually. Similarly, there is tension between humans and big cats such as tigers and leopards (about 300 leopards are killed annually). Attacks from wild cats are prevalent even in cities such as Bangalore (around 8 million people).
 
-\hdg{Monitoring population distributions}
-Imagine possessing the capability to hypothesise, in real-time, dynamic spatial population densities of queried species of animals. This would be an invaluable tool for conservationists battling to mitigate human-wildlife conflict, striving to target anti-poaching measures, toiling to drive policies on urbanisation and protection of wild habitats, etc. I want to drive a pilot project making initial steps towards the development of such capability. In this pilot project I shall focus on crossmodal regression to analyse the spatio-temporal distributions of two behaviourally different species --- elephants and leopards --- in the reserved forests of Karnataka (my home state) in Southern India.
+\hdg{The dream}
+Imagine the capability of dynamically estimating the spatio-temporal distributions of leopards in a particular wildlife reserve. This would serve as an invaluable tool for conservationists across a range of applications: to mitigate human-wildlife conflict, to target anti-poaching measures, to facilitate informed and improved policies on urbanisation towards protection of wild habitats, etc. The data towards building such predictive systems needs to stem from multiple sources of sensing such as satellite imagery for assessing foliage and water-bodies~\cite{urthecast}, sensors distributed across the forest (microphones, cameras, etc.), live data streaming in from expert forest rangers in the field, exploratory robotic sensors scoping the forests, etc. 
 
+\hdg{Objectives and scope of this proposal} 
+Due to the timeline of 12 months,  as a first step towards the above dream, in this pilot project we propose to focus on crossmodal regression from two sources of data: digital camera-traps and forest ranger data. We shall analyse the spatio-temporal distributions of two behaviourally different species --- elephants and leopards --- in the forest reserves of Karnataka (my home state) in Southern India. We shall automate the classification of images from camera-traps and then use this in conjunction with the data from rangers' logs to estimate spatio-temporal distributions.
+
+\hdg{The mathematical crux} The central problem involves non-linear regression of a non-stationary spatio-temporal function (the estimated distribution of the population) with variable uncertainty in the position (domain) of the measurements as well as in the measured values (range). For example, camera traps are precise in spatio-temporal localisation while rangers using smartphones might report more sightings per day. 
 
 \hdg{Timeliness}
-The stupendous rate of development of information technology in Bangalore, the capital of Karnataka, has fostered the development of a number of creative technologies towards application in conservation. Forest rangers were issued mobile phones equipped with specially developed applications such as 'Huli' or 'Hejje' (by Sidvin Core-Tech and KeyFalcon Solutions) to facilitate the reporting of animal sightings while the applications automatically performed spatio-temporal tagging. Digital camera traps donated by companies such as CSS Corp became prevalent (about one per 4 sq.km) in the protected forests in Karnataka. While these developments were useful by introducing innovative measurement devices, there is an imminent need for archiving, scientifically-sound analysis and exploitation of the data from such sources. A notably different solution, adopted by WildSeve~\cite{}, provides a technological platform, along with a toll-free phone number, for farmers to report wildlife conflict incidents. WildSeve was jointly supported by The Rufford Foundation, National Geographic's Big Cats Initiative and Oracle Giving.
+Recently, a number of creative technological solutions have been adapted towards conservation efforts in Karnataka. Forest rangers were issued mobile phones equipped with specially developed applications such as 'Huli' or 'Hejje' (by Sidvin Core-Tech and KeyFalcon Solutions) to facilitate the reporting of animal sightings while the applications automatically performed spatio-temporal tagging. Digital camera traps donated by companies such as CSS Corp became prevalent (about one per 4 sq.km) in the protected forests in Karnataka. A notably different solution, adopted by Wild Seve~\cite{wildseve}, provides a technological platform, along with a toll-free phone number, for farmers to report wildlife conflict incidents. WildSeve was jointly supported by The Rufford Foundation, National Geographic's Big Cats Initiative and Oracle Giving. However the WildSeve is an inherently reparative model which compensates farmers with financial losses in an attempt to pacify their sentiments against co-habitation with wildlife. There is an imminent need for \textit{archival, scientifically-sound analysis and exploitation of the data} from the various sources of data. 
 
-\hdg{Sources of tracking data}
+\hdg{A note about the sources of data}
 The main sources of data are radio-collars, camera-traps and forest rangers via smartphone applications. 
 Transmitters (radio-collars) are useful means of tracking individuals within a species when the population is small or when the species exhibits clumped (herding) social behaviour.~e.~g.~herds of elephant. However, in regions with thriving populations of animals that pose a threat to human life, such as big cats or lone tuskers, tracking based on a few statistical samples is unacceptable due to dangerously high uncertainty. Further, while tracking using radio-collars is useful for monitoring the individual's health and habits, predicting when they run the risk of human-conflict is non-trivial since it requires active seeking (polling) using a receiver. 
 % 
@@ -110,19 +115,33 @@ Automatically triggered camera-traps can detect individual animals at pre-determ
 A more recent form of tracking has been via the use of smartphones with custom-designed applications such as 'Hejje' (\textit{transl.} pug-mark) for reporting events such as animal sightings, water levels, illegal deforestation, etc. Scores of such phones have been distributed to forest rangers who patrol thousands of kilometres of forest tracks in a month. 
 
 
-\hdg{The mathematical crux} The central problem involves non-linear regression of a non-stationary spatio-temporal function with variable uncertainty in the position (domain) of the measurements as well as in the measured values (range). For example, camera traps are precise in spatio-temporal localisation while rangers using smartphones might report more sightings per day. 
+\hdg{Hypotheses}
+We distill the objectives of this proposal down to the following three hypotheses:
+\begin{itemize}[topsep=-2.1ex,itemsep=-.7ex,leftmargin=1ex,itemindent=3ex]
+ \item [\textbf{H1}.] It is possible to automatically classify leopards and elephants in data from camera traps. In addition, it is also important to obtain estimates of uncertainty in the classification. As a bonus, we hope that we will also be able to perform recognition of individuals (cats) with distinctive patterns.
+ \item [\textbf{H2}.] There exists a duality between uncertainty in position and uncertainty in value of sampled functions. Camera traps are focused on precise location while experienced rangers are more precise in recognising species or individuals. The duality will allow us to integrate both forms of uncertainties within a unified mathematical framework.
+ \item [\textbf{H3}.] The underlying regression of the spatio-temporal statistics may be modelled using a Gaussian process by the identification of a suitable, non-stationary covariance function.
+\end{itemize}
+\vspace{2.5ex}
+% 
+% \hdg{Experimental methods and timeline}
+% Simulation: uncertainty.
+% Real data: Camera traps and Hejje
+% Additional sensors: Microphones with solar-powered FPGA call-detectors.
 
-\hdg{Hypothesis}
-duality between uncertainty in position and uncertainty in value.
-regression modelled by a gaussian process with a non-stationary covariance function.
+\hdg{Milestones}
+\begin{enumerate} [topsep=-1ex,itemsep=-.1ex,leftmargin=1ex,itemindent=3ex]
+ \item [\textbf{M1}] (3  months) Develop classifier to verify hypothesis H1 using camera-trap data from collaborator Sanjay Gubbi.
+ \item [\textbf{M2}] (6  months) Develop theoretical model of duality expressed in H2.
+ \item [\textbf{M3}] (9 months) Develop non-stationary covariance function for the Gaussian process regression model.
+ \item [\textbf{M4}] (12 months) Validate results of M1 and M3 using leave-p-out cross validation. Further validation of M3 will be performed by developing a simulator for distributions of fauna in similar fashion to flora~\cite{Bradbury15Guided}, where ground truth distribution data will be available.
+ \end{enumerate}
+\vspace{2.5ex}
 
-\hdg{Experimental methods and timeline}
-Simulation: uncertainty.
-Real data: Camera traps and Hejje
-Additional sensors: Microphones with solar-powered FPGA call-detectors.
+\hdg{Feasibility and risk}
+I have garnered the approval of conservationists in the field such as Mr. Sanjay Gubbi from Nature Conservation Foundation India and also consolidated collaboration with eminent scientists such as Dr. Krithi Karanth from Wildlife Conservation Society. They have offered support in forms such as providing access to data from camera-traps, introductions to the relevant networks of individuals, etc. I am fluent in the local language (Kannada) which will ease interaction with local communities during field trips. The main practical risk is that we might collect insufficient amounts of data. To mitigate this we will augment our testing with published datasets~\cite{yu2013automated}. The primary risk on the theoretical aspects is that we are unable to prove the existance of a duality (H2, M2). Fortunately, this is not critical because we may ignore uncertainties in position and proceed with the remainder of the project.
 
-\hdg{Foundation for future projects}
-Combine with data about water levels, urbanisation, foliage, etc. Build simulation models for fauna.
+% Combine with data about water levels, urbanisation, foliage, etc. Build simulation models for fauna.
 
 
 % 
@@ -159,7 +178,7 @@ Combine with data about water levels, urbanisation, foliage, etc. Build simulati
 % \bibliographystyle{ieeetr}
 % \begin{multicols}{2}
 % {\footnotesize \bibliography{URF14}}
-{ \footnotesize \bibliography{URF14}}
+{  \bibliography{RSCG16}}
 % {\bibliography{URF14}}
 %  \end{multicols}
 
