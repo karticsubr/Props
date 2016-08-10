@@ -13,6 +13,7 @@
 \usepackage{lastpage}
 \usepackage{fancyhdr}
 \usepackage{helvet}
+\usepackage{microtype}
 \usepackage{amssymb,amsfonts}
 \usepackage[super]{natbib}
 \setlength{\bibsep}{.5ex}
@@ -45,7 +46,7 @@
 \setlength\textheight{10in}
 \setlength\textwidth{6.3in}
 \setlength\oddsidemargin{.1in}
-\setlength\evensidemargin{.2in}
+\setlength\evensidemargin{.1in}
 \setlength\parindent{0.25in}
 % \footskip -.05in
 \pagestyle{fancy}
@@ -85,13 +86,11 @@ of Spatio-temporal Statistics of Targeted Species}
 % \vspace{-4em}
 }
 
-% \begin{figure*}
-%  \includegraphics[width=\linewidth]{URF14HLD2}
-% %  \vspace{-2em}
-% \caption{\emph{Visual summary of A) novelty, B) application context and C) and D) key insight to sampling problem.}}
-% \label{fig:Plan}
-%  \vspace{-1.5em}
-% \end{figure*}
+\begin{figure*}[htbp!]
+ \includegraphics[width=\linewidth]{teaser}
+\caption{\emph{Caption coming soon.}}
+\label{fig:teaser}
+\end{figure*}
 
 \hdg{Human-wildlife conflict in India} India's burgeoning human population has led to unprecedented rates of urbanisation, leaving a mere 5\% of the land area to be earmarked for conservation~\cite{indiacons}. These protected reserves are the last resort for thriving populations of large and threatened mammals. Unfortunately, these fragmented areas are surrounded by human settlements. Each year, thousands of people and hundreds of wild animals lose their lives due to human-wildlife conflict in India. Hundreds of farmers, each year, suffer devastating loss to their property and crops. Conflicts between humans and wild elephants result in about 400 human fatalaities and the deaths of about 50 wild elephants annually. Similarly, there is tension between humans and big cats such as tigers and leopards (about 300 leopards are killed annually). Attacks from wild cats are prevalent even in cities such as Bangalore (around 8 million people).
 
@@ -120,7 +119,7 @@ We distill the objectives of this proposal down to the following three hypothese
 \begin{itemize}[topsep=-2.1ex,itemsep=-.7ex,leftmargin=1ex,itemindent=3ex]
  \item [\textbf{H1}.] It is possible to automatically classify leopards and elephants in data from camera traps. In addition, it is also important to obtain estimates of uncertainty in the classification. As a bonus, we hope that we will also be able to perform recognition of individuals (cats) with distinctive patterns.
  \item [\textbf{H2}.] There exists a duality between uncertainty in position and uncertainty in value of sampled functions. Camera traps are focused on precise location while experienced rangers are more precise in recognising species or individuals. The duality will allow us to integrate both forms of uncertainties within a unified mathematical framework.
- \item [\textbf{H3}.] The underlying regression of the spatio-temporal statistics may be modelled using a Gaussian process by the identification of a suitable, non-stationary covariance function.
+ \item [\textbf{H3}.] The underlying regression of the spatio-temporal statistics may be modelled using a Gaussian process by the identification of a suitable, non-stationary covariance function~\cite{paciorek2003nonstationary}.
 \end{itemize}
 \vspace{2.5ex}
 % 
