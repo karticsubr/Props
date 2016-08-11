@@ -1,0 +1,290 @@
+Ask Krithi
+about Data Management plan.
+Letters
+Permission, fees, etc.
+
+Motivation: ...
+Human/elephants
+12-13: 422, 101
+13-14: 413, 72
+14-15: 391, 39
+
+Sources/Engineering/sensors: 
+Rangers/trackers
+Camera traps
+Collars/transmitters
+Microphones
+Tourists
+Multi-sensory UAVs
+
+Science? Uncertainty modelling, Accumulation / sliding window 
+Transformation of uncertainty across domain and range.
+
+Long term: Scaling, Satellite imagery for correlating with water sources, urbanisation, etc.
+
+Collaboration: WCS and NCF
+
+Timeliness: first Indian leopard census, WildSeve, reports on conflict, huli/hejje, camera-traps
+
+Hypothesis:
+
+Experimental methods/timeline:
+
+Our studies clearly show that the populations in Nagarahole-Bandipur are at high densities (10-15 tigers per 100 sq.km), despite annual losses of 20% from mortalities and dispersals.
+
+Crowdsourcing meets ecology: http://www.aaai.org/ojs/index.php/aimagazine/article/view/2533
+http://www.bioacoustics.info/article/techniques-studying-spatio-temporal-distribution-animal-vocalizations-tropical-wet-forest
+Modelling: http://onlinelibrary.wiley.com/doi/10.1890/10-0602.1/abstract
+
+Snow leopards: http://www.conservationleadershipprogramme.org/project/human-snow-leopard-conflict-india/
+http://navinderjsingh.weebly.com/uploads/1/1/2/2/11224342/masterthesis_vera_steinberg.pdf
+
+
+
+The Wildlife Trust of India, an environmental NGO, with the approval of the environment ministry, has conducted a study on the migration patterns of elephants and has documented 88 elephant corridors across the country. This study, however, does not cover issues related to human-elephant conflicts.
+http://timesofindia.indiatimes.com/city/dehradun/400-people-killed-in-man-animal-conflict-in-last-15-years/articleshow/46237629.cms
+Only 12% of global land is protected area. In India it is 4%. 
+According to the World Database
+on Protected Areas, 2012, only 13 per cent of earth’s
+surface belongs to the global network of protected
+areas. These areas are, in fact, the last resort for many
+large and threatened mammals. With the protected
+areas largely surrounded by human population,
+the conflict situation has risen in recent times. 
+http://www.teriin.org/pdf/tg_dec2014.pdf
+
+Human-animal conflict
+Animal health and migration
+Camera traps available per 4 sq km
+Hejje provides location details
+Security required to prevent poaching
+
+Translocation is not a suitable option (makes animals aggressive). 
+Radio-collaring not practical as populations rise
+
+Camera-traps are too late to warn. Wholistic view required of complicated interaction across species.  
+
+
+Egap
+Outline of present research*Please provide the research project title and a brief summary of your Dorothy Hodgkin, University Research, Sir Henry Dale and Industry Fellowship, Wolfson Research Merit Award and Research Professorship. Maximum 700 characters (including spaces)
+
+
+Publications*Please provide details of all relevant publications in reverse chronological order and indicate the three most significant publications (within the last 5 years) with an asterisk*. Please give the publisher or URL, including any password, where these three publications may be obtained. This box does not have a character limitation or alternatively, you may upload a PDF file portrait orientation A4 (1 page maximum). Please add ‘See attachment’ in the text box if necessary
+￼
+Give the full title of your proposed project. Maximum 200 characters (including spaces)
+CAT-SPATS: Crossmodal Analysis and Tracking of Spatio-temporal Statistics of Targeted Species
+
+Please provide 5-10 keywords to describe your research proposal area
+Wildlife conservation, human-wildlife conflict, spatio-temporal distribution, video-processing, crossmodal sensing
+
+
+Rationale & Motivation*Please provide a brief statement explaining how your proposal meets with the goals of the Global Challenges Research Fund and specifically how it will address problems directly relevant to developing countries. Maximum 2000 characters (including spaces).
+
+India is gripped by an escalating problem of human-wildlife conflict. Thousands of people and hundreds of wild animals are killed every year as dwindling natural wild habitats become increasingly fragmented, blending with rural and urban sprawls. Classified as a ‘megadiverse’ country by Conservation International, about 7% of the world’s wild mammal populations live within protected reserves in India (which occupy merely 0.15% of the world’s area).  These habitats are embedded in a country that is home to 17.5% of the world’s population and 20% of the world’s poverty-stricken. The struggle for survival on both sides of the boundaries of forests in India is a source of increasing tension, plaguing the efforts of conservationists who toil hard to restore harmony. Unfortunately, the annual budget allocated to wildlife preservation in India is less than 0.002% of its GDP, half of which is spent on Project Tiger -- the global poster child for conservation efforts in India.
+
+My hypothesis is that the effectiveness of conservation efforts in India may be significantly increased by the aid of computational guidance to experts in the field. In this project I address one such problem, of estimating the spatio-temporal distributions of certain species such as asiatic elephant and leopard. The fragmentation of protected reserves, along with their relatively small areas, have made it feasible to install sensors within the forest. E.g. In Karnataka, a state within India, with the largest density of Asiatic elephants in the world, there is one pair of digital cameras per 4 sq.km of forest. These cameras generate vast amounts of data that are currently sorted manually. Insufficient budgets for skilled human resources make the perusal of this data extremely challenging. One of my objectives in this pilot project is to automate the processing of this data. Further, I propose to combine it with other sources of data to estimate spatio-temporal statistics across species.
+
+
+Programme of work*Please provide a timeline of the programme of work. Maximum 1000 characters (including spaces)
+
+Pre-project (Sep-Dec 2016): Recruitment 
+Identification of candidates through collaborator networks and advertisement. 
+
+Quarter 1(Dec 2016 - Feb 2017): Automatic classification of camera-trap data
+Obtain access to data - collaborator Sanjay Gubbi, National Conservation Foundation - India. Develop state of the art (cited in the [6] research proposal) and adapt it to specific conditions and species. Validate model and Publish the data as well as classifier. 
+
+Quarter 2(Mar - May 2017): Model duality in uncertainty
+Hypothesis: there exists a theoretical link between uncertainties in the sampled values and sampled locations of a function. Identify this connection and model the combination of different sampling methods (camera traps, data from rangers, etc.). 
+
+Quarter 3(Jun - Aug 2017): Core statistical contribution
+Model non-stationary covariance functions for non-linear Gaussian Process regression of the spatio-temporal data. 
+
+Quarter 4(Sep - Nov 2017): Validation and publication
+
+
+Potential applications*Please explain the potential impact that this grant may have on your research. Maximum 1000 characters (including spaces)
+First, it will provide me with a concrete opportunity to forge relationships that are essential for the translation of my academic research into practical outcomes. The existence of this “Challenge Grants” scheme and a mere mention of my potential application opened doors. Conservationists have taken my interest seriously enough to participate in dialogues with me regarding the issues they face in the field. If my application is accepted, I am confident that this project will establish trust and potentially lead to exciting possibilities in the future such as access to sensitive data (the spread of diseases due to human-wildlife interaction). Second, I am thrilled by the prospect of working with a Research Associate (Quarter 3) to study the duality between uncertainties in position and value. I believe that such a result will provide novel insight towards the study of uncertainty quantification in non-stationary processes and have a wide academic impact. 
+
+
+Collaborations*Please mention any collaborative arrangements in the conduct of the proposed research including the names of your collaborators. Maximum 1000 characters (including spaces)
+I have engaged in discussions with two acclaimed conservationists, currently focusing on human-wildlife conflicts in Karnataka, India.
+
+Mr. Sanjay Gubbi. National Conservation Foundation 
+M.Sc. Conservation Biology, Univ. of Kent (2007). Best postgrad student of the year.
+Winner of Carl Zeiss Wildlife Conservation Award, 2011.
+Has agreed to provide data from camera traps. As a well-respected figure in the community, Sanjay is both able and willing to facilitate any leg-work that may be required in the field. 
+
+Dr. Krithi Karanth, Centre for Wildlife Studies (India), Adjunct Assistant Prof., Duke University
+Ph.D in Env. Science and Policy, Duke Univ. (2008), 
+Master's in Env. Science from Yale (2003), 
+Krithi has extensive experience on conflicts, and has recently completed a project “Wild Seve” which provides financial assistance to farmers who suffer losses due to wildlife conflict. She has offered to mentor the RA and provide guidance on issues of data management and exploitation. 
+
+
+
+Outline of Data Management and Data Sharing Plan*If the proposed research will generate data that is of significant value to the research community, then please provide details of your data management and sharing plan. Maximum 1500 characters (including spaces)
+The input data will consist of images (JPEG) and data logged by expert ranger.  This data is produced by existing sensors already installed and is managed by the Nature Conservation Foundation of India (to be made available by collaborator Sanjay Gubbi).
+
+I envision the need for 4 types of storage.
+Active: Data collected from the field, to be used as training and test inputs during development, will be stored on local and external hard disks (included in costing). 
+Repository: Any programming source code, articles, figures, forms and other documents will be stored on a private gitHub repository for the duration of the project (included in costing). 
+Intermediate: For the duration of the project, active data will be backed up on RDM DataStore provided by the University of Edinburgh. 0.25TB is provided free of cost (no need to purchase extra storage). 
+Published: After completion of the project, we propose to publish the data used in the training as well as testing of the classification algorithm that will be developed in the first quarter of the project (refer to proposal). We will use the facility provided by Information Services at UoE. http://datashare.is.ed.ac.uk/
+
+Security: While the goal is dynamic prediction of population density, this information could be abused if made publicly available (e.g. by poachers). Additional security will need to be developed (after the lifetime of the project, by NCF India) in the form of access control or by delaying the release of public data. 
+
+
+
+- Data Types, Formats, Standards and Capture Methods
+- Ethics and Intellectual Property
+- Access, Data Sharing and Reuse
+- Short-Term Storage and Data Management
+- Deposit and Long-Term Preservation
+- Resourcing
+
+Active: Hard disk
+Temporary: GIT
+Intermediate: RDM DataStore http://www.ed.ac.uk/information-services/research-support/data-management/data-storage
+http://datashare.is.ed.ac.uk/
+
+Use of Animals in Research*Does your proposal involve the use of animals or animal tissue? If you intend on using animals in research, then please contact the office for further information, as you will be required to complete an additional form detailing your intended use of animals in your research. Failure to do so will result in a delay in processing your application. Please note that all applications involving the use of primates, cats, dogs and equidae animals will be further reviewed by the NC3Rs
+No. This project is focused on computational methods to analyse data, such as photographs of wild animals. 
+
+
+Details of Animal LicencePlease provide details of the Animal Licence costs associated with your research
+N/A
+
+Field Research Overseas -permissionPlease note only UK residents are eligible for funding (ie. we do not fund scientists from overseas who may be involved in your project). However a small sum may be paid for essential local labour in the overseas location. Please upload any mandatory documents of permission using the 'Field Document' facility and enter ‘See attachment’ in the text box. Please leave blank if not applicable
+
+
+
+Field Research Overseas -collection of specimensPlease upload any mandatory documents of permission using the ‘Field Document’ facility and enter ‘See attachment’ in the text box. Please leave blank if not applicable
+
+
+
+Lay Report*Please provide a lay summary of your proposed research project including a description of the experimental methods and techniques you will be using, together with an indication of milestones/time-scales for the various components. Plain text only – please enter a maximum of 3000 characters (including spaces)
+This data is managed by the Nature Conservation Foundation of India. 
+
+Other Funding Sources*Please note all funding from other sources must be declared for the proposed project for which the Royal Society Challenge Grant is sought and details of all other current funding which the applicant is in receipt of. Please also state the purpose for each type of funding
+This data is managed by the Nature Conservation Foundation of India. 
+
+Justification of expenses*Justification of all requested costs must be given. Maximum 3500 characters (including spaces)
+This data is managed by the Nature Conservation Foundation of India. 
+
+
+
+
+
+Aug 4th
+gubbi@ncf-india.org, rajeev@ncf-india.org, mdm@ncf-india.org, aparna@ncf-india.org, 
+sreedhar@ncf-india.org 
+
+Dear 
+
+Who am I?
+My research focuses on sampling, simulation and machine learning for problems in visualisation, computer graphics and computer vision.  I am interested in developing technological innovation towards improved data collection as well as analysis for important problems faced by conservationists in India. I am a researcher and lecturer in an institute that  --- along with University of Edinburgh  --- designs specialised sensors and has one of the leading robotics facilities in the world. I am particularly keen to combine data from multiple sources such as apps used by rangers (e.g. ‘Hejje’ or ‘Huli’), satellite imagery (e.g. https://www.urthecast.com/), camera traps, drones with microphones and cameras, etc. to provide spatio-temporal statistics about particular species.
+
+Why am I contacting you?
+I am contacting you in the hope that you will be happy to share with me the difficult and practical problems faced by experts like you on the field. I am sure that such real-world input from you will inspire my academic research and provide me with fresh perspective. In summary, I want to use input from people like you to drive my my academic research towards real problems faced in the field. 
+
+Goal - collaborative funded project
+In the short term, I have been invited to apply for funding (100,000 GBP) from the British government towards a 1-year research project towards addressing challenges in this area in India. Since it is a short term project (feasibility/pilot study), I need to hone in on a specific problem. I am considering the problem of data collection and analysis of spatio-temporal statistics about particular species. This could be towards potential correlations with urbanisation, conflict,  poaching, etc. 
+
+Relevance?
+I went through your respective profiles and think that I might need your help. I read articles from your research programme (NCF Western Ghats) such as “Providing more protected space for tigers Panthera tigris: a landscape conservation approach in the Western Ghats, southern India”, “Understanding the ecology of leopards in Karnataka”, etc. I believe that my skills in the development of technology and data analysis will complement the impressive work that you are all performing on the field. 
+
+I understand and appreciate that you all have different targeted interests. A discussion with you will help me identify particular problems where I might be able to contribute. Please let me know if you are able to spare some time soon (Aug 5th-10th) to exchange interests on Skype and to identify a real problem that I could propose (deadline Aug 16th) as a reasonable topic for a 1-year exploration.
+
+Thank you
+Kartic Subr
+Associate Professor and Royal Society University Research Fellow
+Institute for Sensors, Signals and Systems,
+Heriot Watt University,
+Edinburgh. UK.
+http://home.eps.hw.ac.uk/~ks400/
+ 
+My background: 
+I am from Bangalore. I completed my BE at PESIT Bangalore and worked at HP Bangalore for a year. Subsequently I obtained an MS and PhD from University of California in Visual Computing and Computer Science. I am currently a Royal Society University Research Fellow.  I am also an avid wildlife enthusiast and photographer. I have fond memories from many of my hikes in the areas surrounding Mysore, Sakleshpura, Niligiris, KGudi, etc. in search of reclusive cats and other animals.
+Aug 3rd
+gubbi@ncf-india.org, rajeev@ncf-india.org, mdm@ncf-india.org, aparna@ncf-india.org, 
+
+http://journals.cambridge.org/action/displayFulltext?type=1&fid=10245484&jid=ORX&volumeId=50&issueId=02&aid=10245479
+
+http://ncf-india.org/people/aparna-kolekar, http://ncf-india.org/people/vinod-krishnan
+
+https://twitter.com/krithikaranth
+
+
+Cameras donated: https://www.csscorp.com/
+
+Hejje android app: http://www.sidvincoretech.com/projects.php
+
+CHALLENGES:http://www.teriuniversity.ac.in/mct/pdf/new/assignment/R_GOKUL_Challenge_of_the_Forestry_Sector.pdf
+
+EMAIL IDS: http://aranya.gov.in/static%20pages/OfficersAranayaBhavan.aspx
+http://ifsassociationkarnataka.org/member_list.html
+
+R. Gokul: gkl_raju@yahoo.com
+Mohan Nagarajan: info@sidvincoretech.com
+Vinay luthra: vinay.luthra@gmail.com
+G.V. Sugur: ganeshsugur@gmail.com
+Selvakumar.G: Gskumar2005@gmail.com
+Ravi Ralph: ravi01ralph@yahoo.com
+Sanjay Gubbi: http://ncf-india.org/people/sanjay-gubbi  gubbi@ncf-india.org
+Coastal: http://ncf-india.org/people/rucha-karkarey http://ncf-india.org/people/pooja-rathod
+
+Human-conflict: http://ncf-india.org/people/m-d-madhusudan
+
+Spatio-temporal patterns large mammals: http://ncf-india.org/people/rajeev-pillay
+GIS and conflict data: http://ncf-india.org/people/aparna-kolekar
+Human-elephant conflict: http://ncf-india.org/people/vinod-krishnan
+
+
+
+PHONE NUMBERS: http://www.aranya.gov.in/Static%20Pages/OfficersDeputation.aspx
+
+http://www.aranya.gov.in/Static%20Pages/TigerReserves.aspx
+
+http://www.telegraphindia.com/1141130/jsp/nation/story_19105925.jsp#.V6HFvHUrKkA
+
+
+
+
+
+
+
+Follow Us:      Today's Edition
+| Sunday , November 30 , 2014 |
+
+
+
+
+
+
+
+
+
+
+
+
+Bangalore, Nov. 29: India’s wildlife parks have for several years been GPS-tracking their animals through radio-collars and microchip implants. For the first time now, the trackers will be tracked too.
+A tiger reserve near Mysore has hooked its jungle patrol teams to a smartphone-based GPS system to keep tabs on their movements, so the nearest team can be rushed to tackle emergencies such as poaching or forest fires.
+Also, the live monitoring of patrolling patterns will tell the bosses at the Nagarahole Tiger Reserve, 220km from Bangalore, which team is working and which is shirking.
+Bangalore-based engineering firm Sidvin Core-Tech has developed the application Hejje (“pug marks” in Kannada) for the reserve free of charge, under a corporate social responsibility initiative.
+“Hejje helps us clearly mark out the areas patrolled, or not patrolled, by our teams,” reserve director R. Gokul told The Telegraph.
+“Each of our 57 patrolling teams, totalling around 400 personnel, is now provided with an Android smartphone loaded with the Hejje application.”
+Although the teams already had single-band walkie-talkies to communicate with each other and the control room, Gokul said the live “pings” (digital signals) that Hejje provided as the patrols moved around their assigned zones was a real advantage.
+
+Another picture shot at Bandipur reserve shows a cub fiddling with a twig. Bangalore News Photos
+“We can now know to the dot which teams are the closest to an emergency site involving other personnel, animals or even a fire,” Gokul said.
+Although poaching is not a very serious issue in Nagarahole, frequent forest fires have destroyed large tracts and killed small animals. “In last year’s fire we lost around 100 acres of forest,” Gokul said.
+Quick response is crucial to containing forest fires in the summer, when dry leaves and shrubs act as fuel. Countless reptiles, Malabar squirrels and monkeys and acres of green cover were destroyed in last year’s fire.
+Hejje requires the bare minimum of GPRS mobile signals, Gokul said. “We have installed a few boosters inside the forest to link up the tracking system.”
+The 643sqkm reserve, earlier part of the larger Bandipur Tiger Reserve, has also installed 400 cameras for visual information on animal movements.
+Donated by city-based IT firm CSS Corp under a corporate social responsibility initiative, the cameras — worth Rs 85 lakh — are fitted in pairs, facing each other from a few feet apart.
+“Every 4sqkm area has one pair of cameras facing each other,” said Gokul.
+Whenever an animal passes between a pair of cameras, the infrared beams connecting the pair are interrupted. That triggers the inbuilt flash in either camera to shoot pictures from either side of the animal.
+“Images of a tiger from both sides will give us the exact stripe details, which are as unique as fingerprints in humans,” Gokul said.
+“The stripe database can be used to identify the animal if it falls in the camera trap again or is found dead.”
+Being territorial animals like elephants, tigers tend to move about their usually large home turf. So, one tiger could get camera-trapped more than once, and by different pairs of cameras.
+Their unique stripe pattern, thus documented, could be used to identify even a poached tiger’s skin.
+
